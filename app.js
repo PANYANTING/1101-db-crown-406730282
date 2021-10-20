@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const crown_82_Router = require('./routes/crown_82');
+const crown2_82_Router = require('./routes/crown2_82');
 var app = express();
 
 // view engine setup
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/crown_82',crown_82_Router);
+app.use('/crown2_82',crown2_82_Router);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
