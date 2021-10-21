@@ -4,7 +4,7 @@ exports.getCategories =async (req,res)=>{
     try{
         let results = await serviceCrown2Controller_82.getCategories();
         console.log('results',JSON.stringify(results));
-        res.render('crown_82', { 
+        res.render('crown2_82', { 
             data: results,
             title:'Crown2_82',
             name:'YANTING PAN',

@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const crown_82_Router = require('./routes/crown_82');
 const crown2_82_Router = require('./routes/crown2_82');
+const api_82_Router = require('./routes/api_82')
 var app = express();
 
 // view engine setup
@@ -24,6 +25,7 @@ app.use('/', indexRouter);
 app.use('/crown_82',crown_82_Router);
 app.use('/crown2_82',crown2_82_Router);
 app.use('/users', usersRouter);
+app.use('/api_82',api_82_Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

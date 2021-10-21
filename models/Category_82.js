@@ -13,8 +13,8 @@ const Category_82 = class Category_82{
     //get all categories
     static async fetchAll(){
         try{
-            let results = await db.query(`SELECT * from category`);
-            console.log('resulrs',JSON.stringify(results.rows));
+            let results = await db.query(`SELECT * from category_82`);
+            // console.log('resulrs',JSON.stringify(results.rows));
             return results.rows;
         }catch(e){
             console.log('error',e);
